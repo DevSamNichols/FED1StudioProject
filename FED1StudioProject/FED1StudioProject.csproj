@@ -69,6 +69,11 @@
   <ItemGroup>
     <Content Include="Classes.html" />
     <Content Include="Contact.html" />
+    <Content Include="images\pawel-czerwinski-IiprEH2eR64-unsplash %281%29.jpg" />
+    <Content Include="stylesheets\contact.css" />
+    <Content Include="stylesheets\classes.css" />
+    <Content Include="stylesheets\team.css" />
+    <Content Include="stylesheets\index.css" />
     <Content Include="Team.html" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
@@ -86,9 +91,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="images\" />
     <Folder Include="scripts\" />
-    <Folder Include="stylesheets\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
