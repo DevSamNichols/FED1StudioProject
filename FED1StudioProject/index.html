@@ -5,11 +5,15 @@
 
     <meta charset="utf-8" />
     <title>Fed 1 Studio Project</title>
+    <!-- FAVICON (Get transparent pic when you change the favicon) -->
+    <link href="images/favicon-32x32.png" rel="icon" />
+    <!-- REMINDER - ADD CONTENT TO META TAGS -->
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
     <link href=stylesheets/Index.css rel="stylesheet" />
-    <!-- REMINDER - ADD CONTENT TO META TAGS -->
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2042d5f7ad.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -17,23 +21,19 @@
 
     <header>
 
-        <div>
+        <p class="socialsHeader">
 
-            <p class="socialsHeader">
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
 
-                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a>
 
-                <a href="https://twitter.com/" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
 
-                <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
-
-            </p>
-
-        </div>
+        </p>
 
         <section class="companyContainer">
 
-            <img class="companyImg" src="images/pawel-czerwinski-IiprEH2eR64-unsplash (1).jpg" />
+            <img class="companyImg" src="images/sampleimage.jpg" />
 
             <div class="companyColumn">
                 <h3 class="companyName">Company name here</h3>
@@ -42,11 +42,10 @@
 
         </section>
 
-
-
     </header>
 
     <nav>
+
         <ul class="navContainer">
 
             <li class="navHome navItem">
@@ -66,6 +65,7 @@
             </li>
 
         </ul>
+
     </nav>
 
     <main>
@@ -74,16 +74,16 @@
 
             <article class="aboutContainer">
 
-                <img class="aboutImg" src="images/pawel-czerwinski-IiprEH2eR64-unsplash (1).jpg" />
-
+                <img class="aboutImg" src="images/sampleimage.jpg" />
 
                 <div class="aboutColumn">
-                    <h2>About Us</h2>
+
+                    <h2 id="aboutUs">About Us</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit. Malesuada proin libero nunc consequat interdum varius sit amet. Pharetra et ultrices neque ornare. Pellentesque nec nam aliquam sem. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Consequat nisl vel pretium lectus quam. Eleifend quam adipiscing vitae proin.
                     </p>
-                </div>
 
+                </div>
 
             </article>
 
@@ -91,27 +91,41 @@
 
                 <h1 class="whyChooseUs">Why Choose Us</h1>
 
-                <!-- wcu == Why Choose Us -->
-                <div>
-                    
-                    <img class="companyImg" src="images/pawel-czerwinski-IiprEH2eR64-unsplash (1).jpg" />
+                <!-- class="wcu" (Why Choose Us) -->
+                <div class="wcuContainer">
 
-                    <p>
+                    <img class="wcuImg" id="img1" src="images/sampleimage.jpg" />
+
+                    <div class="wcuColumn1">
+
                         <h4>Lorem impsum dolor</h4>
 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit. Malesuada proin libero nunc consequat interdum varius sit amet. Pharetra et ultrices neque ornare. Pellentesque nec nam aliquam sem. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Consequat nisl vel pretium lectus quam. Eleifend quam adipiscing vitae proin.
-                    </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit. Malesuada proin libero nunc consequat interdum varius sit amet. Pharetra et ultrices neque ornare. Pellentesque nec nam aliquam sem. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Consequat nisl vel pretium lectus quam. Eleifend quam adipiscing vitae proin.
+                        </p>
+
+                    </div>
 
                 </div>
 
-            </article>
+                <div class="wcuContainer">
 
-            <article>
 
-                <h4>Lorem Impsum Dolor</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit. Malesuada proin libero nunc consequat interdum varius sit amet. Pharetra et ultrices neque ornare. Pellentesque nec nam aliquam sem. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Consequat nisl vel pretium lectus quam. Eleifend quam adipiscing vitae proin.
-                </p>
+
+                    <div class="wcuColumn2">
+
+                        <h4>Lorem impsum dolor</h4>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit. Malesuada proin libero nunc consequat interdum varius sit amet. Pharetra et ultrices neque ornare. Pellentesque nec nam aliquam sem. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Consequat nisl vel pretium lectus quam. Eleifend quam adipiscing vitae proin.
+                        </p>
+
+                    </div>
+
+                    <img class="wcuImg" id="img2" src="images/sampleimage.jpg" />
+
+                </div>
+
             </article>
 
         </section>
@@ -126,11 +140,12 @@
 
         <div class="socialsFooter">
 
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a class="fbFooter" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
 
-            <a href="https://twitter.com/" target="_blank">Twitter</a>
+            <a class="twitterFooter" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a>
 
-            <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+            <a class="liFooter" href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+
         </div>
 
     </footer>

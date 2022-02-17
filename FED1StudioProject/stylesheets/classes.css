@@ -1,5 +1,21 @@
 ﻿
 /**********************************
+         BACKGROUND
+**********************************/
+body {
+    background-color: #C2B9B0;
+}
+
+/**********************************
+      FLEXBOX NOTES:
+**********************************/
+/*
+    Container: Only for laying out spacing between your items as well as the positioning of your items inside the container.
+
+    Items: meant to override those positioning and layout properties or to apply different flexible sizing to these elements. (inside the container)
+*/
+
+/**********************************
              NAV BAR
 **********************************/
 
@@ -7,34 +23,32 @@
     display: flex;
     justify-content: flex-start;
     column-gap: 75px;
-    border: 3px solid #000000;
+    border: 3px solid black;
+    background-color: #0C0032;
 }
 
-.navItem{
-    
+/* navItem is to target all the elements within the nav bar */
+.navItem {
 }
 
 .navHome {
-
 }
 
 .navClasses {
-
 }
 
 .navTeam {
-
 }
 
 .navContact {
-
 }
 
 /*Base Link Styling*/
 a {
-    text-decoration: none; 
+    text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: white;
+    letter-spacing: 1px;
 }
 
 /*nav link structure*/
@@ -48,29 +62,30 @@ nav ul li {
 .socialsHeader {
     display: flex;
     justify-content: flex-end;
-    column-gap: 50px;
-    border: 3px solid #000000;
+    column-gap: 30px;
+    margin-right: 20px;
 }
 
 .companyContainer {
     display: flex;
     justify-content: flex-start;
     column-gap: 10px;
-    border: 3px solid #000000;
     height: 100px;
 }
 
 .companyImg {
-    width: 8%;
-    border: 3px solid #000000;
+    width: 141px;
     column-gap: 10px;
     height: 94px;
+    border: 3px solid black;
+    background-color: black;
+    object-fit: cover;
 }
 
 .companyColumn {
     flex-direction: column;
-    border: 3px solid #000000;
 }
+
 
 /**********************************
              FOOTER
@@ -85,10 +100,83 @@ nav ul li {
 }
 
 .socialsFooter {
-    
+    display: flex;
+    column-gap: 30px;
+    margin-right: 20px;
 }
 
 .copyright {
-    
+}
+
+/**********************************
+        CLASS SUBJECTS
+**********************************/
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.classContainer {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.topic {
+    width: 235px;
+    border: 3px solid #000000;
+}
+
+.topicImg {
+    width: 235px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.topic {
+    width: 235px;
+    border: 3px solid #000000;
+}
+
+.topicImg {
+    width: 235px;
+    height: 180px;
+    object-fit: cover;
+}
+
+h2 {
+    text-align: center;
+}
+
+.topicText {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/**********************************
+        CLASS LIST TABLES
+**********************************/
+
+.tableContainer {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+table {
+    border: 3px solid #000000;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.7em;
+    text-align: center;
+}
+
+tr, td, th {
+    border: 1px solid black;    
 }
 
