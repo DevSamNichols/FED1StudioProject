@@ -3,7 +3,8 @@
          BACKGROUND
 **********************************/
 body {
-    background-color: #C2B9B0;
+    background-image: url(../images/mainBackgroundImage.jpg);
+    background-size: cover;
 }
 
 /**********************************
@@ -23,8 +24,12 @@ body {
     display: flex;
     justify-content: flex-start;
     column-gap: 75px;
-    border: 3px solid black;
-    background-color: #0C0032;
+    border: 3px solid #3500D3;
+    background-color: #240090;
+}
+
+.active {
+    text-decoration: underline;
 }
 
 /* navItem is to target all the elements within the nav bar */
@@ -71,21 +76,24 @@ nav ul li {
     justify-content: flex-start;
     column-gap: 10px;
     height: 100px;
+    color: white;
 }
 
 .companyImg {
     width: 141px;
     column-gap: 10px;
     height: 94px;
-    border: 3px solid black;
-    background-color: black;
-    object-fit: cover;
+    border: 3px solid #3500D3;
+    background-color: #240090;
 }
 
 .companyColumn {
     flex-direction: column;
 }
 
+.companySlogan {
+    font-family: 'Ubuntu', sans-serif;
+}
 
 /**********************************
              FOOTER
@@ -93,10 +101,11 @@ nav ul li {
 
 .footerContainer {
     display: flex;
-    border: 3px solid #000000;
+    border: 3px solid #3500D3;
     justify-content: space-between;
     height: 75px;
     align-items: center;
+    background-color: #240090;
 }
 
 .socialsFooter {
@@ -106,6 +115,8 @@ nav ul li {
 }
 
 .copyright {
+    color: white;
+    margin-left: 20px;
 }
 
 /**********************************
@@ -117,9 +128,10 @@ nav ul li {
     width: 250px;
     margin: 0;
     text-align: center;
-    height: 2892px;
-    border-left: 3px solid #000000;
-    border-top: 3px solid #000000;
+    height: 2880px;
+    border-left: 3px solid #3500D3;
+    border-top: 3px solid #3500D3;
+    color: white;
 }
 
 aside {
@@ -129,17 +141,23 @@ aside {
 h1 {
     display: flex;
     justify-content: center;
-    border-bottom: 3px solid #000000;
-    border-top: 3px solid #000000;
+    border-bottom: 3px solid #3500D3;
+    border-top: 3px solid #3500D3;
+    color: white;
+}
+
+.h1 {
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .departmentContainer {
     display: flex;
     margin-bottom: 20px;
+    color: white;
 }
 
 .departmentText {
-
+    width: 946px;
 }
 
 .departmentImg {
@@ -147,6 +165,6 @@ h1 {
     width: 200px;
     margin-right: 50px;
     border-radius: 50%;
-    border: 3px solid #000000;
+    border: 3px solid #3500D3;
     object-fit: cover;
 }
