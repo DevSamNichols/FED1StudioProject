@@ -1,0 +1,196 @@
+﻿/**********************************
+         BACKGROUND
+**********************************/
+body {
+    background-image: url(../images/mainBackgroundImage.jpg);
+    background-size: cover;
+}
+
+/**********************************
+      FLEXBOX NOTES:
+**********************************/
+/*
+    Container: Only for laying out spacing between your items as well as the positioning of your items inside the container.
+
+    Items: meant to override those positioning and layout properties or to apply different flexible sizing to these elements. (inside the container)
+*/
+
+/**********************************
+             NAV BAR
+**********************************/
+
+.navContainer {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 75px;
+    border: 3px solid #3500D3;
+    background-color: #240090;
+}
+
+.active {
+    text-decoration: underline;
+}
+/* navItem is to target all the elements within the nav bar */
+.navItem {
+}
+
+.navHome {
+}
+
+.navClasses {
+}
+
+.navTeam {
+}
+
+.navContact {
+}
+
+/*Base Link Styling*/
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+/*nav link structure*/
+nav ul li {
+    display: inline-block;
+}
+
+/**********************************
+             HEADER
+**********************************/
+.socialsHeader {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 30px;
+    margin-right: 20px;    
+}
+
+.companyContainer {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 10px;
+    height: 100px;
+}
+
+.companyImg {
+    width: 141px;
+    column-gap: 10px;
+    height: 94px;
+    border: 3px solid #3500D3;
+    background-color: #240090;
+}
+
+.companyColumn {
+    flex-direction: column;    
+}
+
+.companyName {
+    color: white;
+}
+
+.companySlogan {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+/**********************************
+             FOOTER
+**********************************/
+
+.footerContainer {
+    display: flex;
+    border: 3px solid #3500D3;
+    justify-content: space-between;
+    height: 75px;
+    align-items: center;
+    background-color: #240090;
+    margin-top: 20px;
+}
+
+.socialsFooter {
+    display: flex;
+    column-gap: 30px;
+    margin-right: 20px;
+}
+
+.copyright {
+    color: white;
+    margin-left: 20px;
+}
+
+/**********************************
+             ABOUT US
+**********************************/
+
+.aboutContainer {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 25px;
+    margin: 50px;
+    height: 250px;
+}
+
+.aboutImg {
+    width: 300px;
+    border: 3px solid #3500D3;
+    object-fit: cover;
+}
+
+.aboutColumn {
+    flex-direction: column;
+    color: white;
+}
+
+#aboutUs {
+    text-decoration-line: underline;
+}
+
+/**********************************
+             WHY CHOOSE US
+**********************************/
+
+.whyChooseUs {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.wcuContainer {
+    display: flex;
+    justify-content: center;
+    column-gap: 3px;
+}
+
+.wcuImg {
+    width: 500px;
+    object-fit: cover;
+    height: 300px;
+    border: 3px solid #3500D3;
+}
+
+.wcuColumn1 {
+    flex-direction: column;
+    width: 500px;
+    color: white;
+}
+
+.wcuText1 {
+    margin-left: 1.2em;
+}
+
+.wcuColumn2 {
+    flex-direction: column;
+    width: 500px;
+    color: white;
+}
+
+.wcuText2 {
+    margin-right: 1.2em;
+}

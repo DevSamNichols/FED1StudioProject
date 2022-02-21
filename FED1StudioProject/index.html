@@ -5,11 +5,19 @@
 
     <meta charset="utf-8" />
     <title>Fed 1 Studio Project</title>
+    <!-- FAVICON (Get transparent pic when you change the favicon) -->
+    <link href="images/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32" />
+    <!-- REMINDER - ADD CONTENT TO META TAGS -->
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
-
-    <!-- REMINDER - ADD CONTENT TO META TAGS -->
+    <link href=stylesheets/Index.css rel="stylesheet" />
+    <!-- Imported Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2042d5f7ad.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -17,67 +25,67 @@
 
     <header>
 
-        <div>
+        <p class="socialsHeader">
 
-            <p>
-                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.facebook.com/learnwithus" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
 
-                <a href="https://twitter.com/" target="_blank">Twitter</a>
+            <a href="https://mobile.twitter.com/weteachstuff" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a>
 
-                <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
-            </p>
+            <a href="https://www.linkedin.com/learnwithus" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
 
-        </div>
+        </p>
 
-        <div>
+        <section class="companyContainer">
 
-            <h3>Company name here</h3>
-            <p>Company slogan here</p>
+            <img class="companyImg" src="images/companyImg.png" />
 
-        </div>
+            <div class="companyColumn">
+                <h3 class="companyName">Company name here</h3>
+                <p class="companySlogan">Company slogan here</p>
+            </div>
+
+        </section>
 
     </header>
 
     <nav>
-        <ul>
-            <li>
+
+        <ul class="navContainer">
+
+            <li class="navHome navItem active">
                 <a href="index.html">Home</a>
             </li>
-            <li>
+
+            <li class="navClasses navItem">
                 <a href="Classes.html">Classes</a>
             </li>
-            <li>
+
+            <li class="navTeam navItem">
                 <a href="Team.html">Team</a>
             </li>
-            <li>
+
+            <li class="navContact navItem">
                 <a href="Contact.html">Contact</a>
             </li>
+
         </ul>
+
     </nav>
 
     <main>
 
         <section>
 
-            <article>
+            <article class="aboutContainer">
 
-                <h2>About Us</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit. Malesuada proin libero nunc consequat interdum varius sit amet. Pharetra et ultrices neque ornare. Pellentesque nec nam aliquam sem. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Consequat nisl vel pretium lectus quam. Eleifend quam adipiscing vitae proin.
-                </p>
+                <img class="aboutImg" src="images/sampleimage.jpg" />
 
-            </article>
+                <div class="aboutColumn">
 
-            <article>
-
-                <h1>Why Choose Us</h1>
-
-                <div>
-
-                    <h4>Lorem impsum dolor</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit. Malesuada proin libero nunc consequat interdum varius sit amet. Pharetra et ultrices neque ornare. Pellentesque nec nam aliquam sem. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Consequat nisl vel pretium lectus quam. Eleifend quam adipiscing vitae proin.
-                    </p>
+                        <h2 id="aboutUs">About Us</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit. Malesuada proin libero nunc consequat interdum varius sit amet. Pharetra et ultrices neque ornare. Pellentesque nec nam aliquam sem. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Consequat nisl vel pretium lectus quam. Eleifend quam adipiscing vitae proin.
+                        </p>
 
                 </div>
 
@@ -85,25 +93,68 @@
 
             <article>
 
-                <h4>Lorem Impsum Dolor</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit. Malesuada proin libero nunc consequat interdum varius sit amet. Pharetra et ultrices neque ornare. Pellentesque nec nam aliquam sem. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Consequat nisl vel pretium lectus quam. Eleifend quam adipiscing vitae proin.
-                </p>
+                <h1 class="whyChooseUs">Why Choose Us</h1>
+
+                <!-- class="wcu" (Why Choose Us) -->
+                <div class="wcuContainer">
+
+                    <img class="wcuImg" id="img1" src="images/sampleimage.jpg" />
+
+                    <div class="wcuColumn1">
+
+                        <div class="wcuText1">
+                            <h4>Lorem impsum dolor</h4>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit. Malesuada proin libero nunc consequat interdum varius sit amet. Pharetra et ultrices neque ornare. Pellentesque nec nam aliquam sem. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Consequat nisl vel pretium lectus quam. Eleifend quam adipiscing vitae proin.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="wcuContainer">
+
+
+
+                    <div class="wcuColumn2">
+
+                        <div class="wcuText2">
+                            <h4>Lorem impsum dolor</h4>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit. Malesuada proin libero nunc consequat interdum varius sit amet. Pharetra et ultrices neque ornare. Pellentesque nec nam aliquam sem. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Consequat nisl vel pretium lectus quam. Eleifend quam adipiscing vitae proin.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <img class="wcuImg" id="img2" src="images/sampleimage.jpg" />
+
+                </div>
+
             </article>
 
         </section>
 
     </main>
 
-    <footer>
+    <footer class="footerContainer">
 
-        <p>
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <div class="copyright">
+            &copy;Copyright 2022 Samuel Nichols
+        </div>
 
-            <a href="https://twitter.com/" target="_blank">Twitter</a>
+        <div class="socialsFooter">
 
-            <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
-        </p>
+            <a class="fbFooter" href="https://www.facebook.com/learnwithus" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
+
+            <a class="twitterFooter" href="https://mobile.twitter.com/weteachstuff" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a>
+
+            <a class="liFooter" href="https://www.linkedin.com/learnwithus" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+
+        </div>
 
     </footer>
 
