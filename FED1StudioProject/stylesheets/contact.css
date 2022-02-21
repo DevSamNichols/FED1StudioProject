@@ -107,3 +107,27 @@ nav ul li {
 
 .copyright {
 }
+
+/**********************************
+        Contact Us
+**********************************/
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;  
+    margin-bottom: 150px;
+}
+
+.contactUsHeader {
+    text-align: center;
+}
+
+.contactUs {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+h2 {
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+}
